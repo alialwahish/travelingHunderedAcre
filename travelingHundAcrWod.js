@@ -56,5 +56,10 @@ function move(str){
     player.location=player.location.west
     else if(str=="south")
     player.location=player.location.south
-    console.log("You are now at "+player.location.character+" House")
+    else{
+        console.log("Not a Valid direction")
+        return false;
+    } 
+
+    return "You are now at "+player.location.character+" House"
 }
